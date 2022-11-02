@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  /* NAV BAR */
+  #nav-bar {
+    text-align: left;
+  }
+  /* JOB INFO */
+  #job-info h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  #job-info h4 {
+    font-size: 1rem;
+  }
+  /* CERTIFICATE */
+  .grid-cer:last-child {
+    border-top: none;
+  }
+  .cer-item-border-left {
+    border: none;
+  }
+}
+/* Customize Project-Info Layout */
+@media (min-width: 768px) and (max-width: 892px) {
+  .md-2021 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .md-2021-item {
+    grid-column: 2;
+  }
+}
+/* Customize JOB-INFO in Tablet Device */
+@media (max-width: 992px) {
+  .job-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}

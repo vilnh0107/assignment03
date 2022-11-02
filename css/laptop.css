@@ -1,0 +1,303 @@
+@media screen {
+  /* RESET */
+  * {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(99, 98, 98);
+  }
+  .bg-grey {
+    background: #f7f7f7;
+  }
+  section > .container {
+    max-width: 1170px;
+    margin: auto;
+    display: block;
+
+    padding: 30px 50px;
+  }
+  #nav-bar {
+    text-align: center;
+  }
+  h3 {
+    color: rgb(73, 73, 73);
+    font-size: 1.2rem;
+  }
+
+  /* -------------------- */
+  /*----- BANNER -----*/
+  /* -------------------- */
+  #banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/banner.jpg");
+    background-position: 50%;
+    height: 70vh;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+
+  .banner-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0);
+  }
+  .banner-wrap h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  /*----- BANNER end -----*/
+
+  /* -------------------- */
+  /*----- NAV BAR -----*/
+  /* -------------------- */
+  .name h2 {
+    font-size: 20px;
+  }
+  #nav-bar .container {
+    padding: 0;
+  }
+  .menu-nav {
+    padding: 20px 5px;
+  }
+  .nav-name {
+    /* width: 30%; */
+    padding: 0;
+    border: none;
+  }
+  .icon {
+    color: rgb(0, 105, 105); /* Icon color + style */
+    width: 42px;
+    height: 42px;
+  }
+  #nav-bar a:link,
+  #nav-bar a:visited {
+    text-transform: uppercase; /* Nav-bar link,hover style */
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+  }
+  #nav-bar a:hover,
+  #nav-bar a:active {
+    color: rgb(0, 105, 105);
+  }
+  /*----- NAV BAR end -----*/
+
+  /* -------------------- */
+  /*----- PERSONSL INFO -----*/
+  /* -------------------- */
+  #target {
+    background-color: #f7f7f7;
+  }
+  #personal-info {
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+  }
+  #target p {
+    line-height: 1.7;
+  }
+  #personal-info ul li {
+    list-style: none;
+    padding: 10px 0;
+  }
+
+  /*----- PERSONSL INFO end -----*/
+
+  /* -------------------- */
+  /*----- JOB-INFO -----*/
+  /* -------------------- */
+  .job-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  #job-info h3 {
+    text-transform: uppercase;
+  }
+  /*----- JOB-INFO end -----*/
+
+  /* -------------------- */
+  /*----- EXPERIENCE -----*/
+  /* -------------------- */
+  .dots,
+  .dots1 {
+    position: relative; /* Dots */
+    margin-bottom: 20px;
+  }
+  .job-dots::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 105, 105);
+    position: absolute;
+    left: -25px;
+    top: 10px;
+  }
+  .dots .active {
+    display: inline-block; /* Hien tai - active */
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    background-color: rgb(0, 175, 175);
+  }
+
+  .job-grid-hobby {
+    display: grid; /* So thich icon */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px 50px;
+    margin: 0;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 60px;
+  }
+  .job-grid-hobby p {
+    font-size: 13px;
+    grid-row: 2/3;
+  }
+
+  .border-icon {
+    border: 1px solid rgb(0, 175, 175);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    position: relative;
+    text-align: center;
+  }
+  .border-icon .icon {
+    left: 5%;
+    top: 45%;
+    transform: scale(1.5);
+
+    position: absolute;
+  }
+  /*----- EXPERIENCE end -----*/
+
+  /* -------------------- */
+  /*----- CERTIFICATE -----*/
+  /* -------------------- */
+  .set-height1 {
+    min-height: 600px;
+  }
+  .set-height2 {
+    min-height: 300px;
+  }
+  .cer-item-border-left {
+    border-left: 1px solid #d6c08d;
+  }
+  .grid-cer:last-child {
+    border-top: 1px solid #d6c08d;
+  }
+  .grid-items-content h3 {
+    font-size: 1.2rem; /* customize text */
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: rgb(99, 98, 98);
+  }
+  .grid-items-content p {
+    font-size: 0.9rem;
+    color: rgb(129, 129, 129);
+    margin-bottom: 5px;
+  }
+  /*----- CERTIFICATE end -----*/
+
+  /* -------------------- */
+  /*----- SKILL -----*/
+  /* -------------------- */
+  .line {
+    background: rgb(0, 175, 175); /* Line - dong ke ngang */
+    display: inline-block;
+    height: 5px;
+    width: 45px;
+    margin-right: 10px;
+  }
+  .line-grey {
+    background: rgb(143, 143, 143);
+    display: inline-block;
+    height: 5px;
+    width: 45px;
+    margin-right: 10px;
+  }
+  .line-blue-grey {
+    margin-top: 20px;
+  }
+  /*----- SKILL end -----*/
+
+  /* -------------------- */
+  /*----- PROJECT -----*/
+  /* -------------------- */
+  .set-height3 {
+    min-height: 400px;
+  }
+  table,
+  td,
+  th {
+    border-collapse: collapse; /* table border */
+  }
+
+  th {
+    width: 70px;
+    padding: 5px 0 5px 5px;
+    text-align: left;
+    vertical-align: text-top;
+  }
+  td {
+    padding: 5px 0 5px 5px;
+  }
+  /*----- PROJECT end ----- */
+
+  /* -------------------- */
+  /*-----  FOOTER ----- */
+  /* -------------------- */
+
+  /*-----  FOOTER end ----- */
+
+  /* -------------------- */
+  /*-----  NANG CAO ----- */
+  /* -------------------- */
+  #nav-bar {
+    position: relative;
+  }
+  .avatar {
+    position: absolute;
+    top: 50%; /* Relative to parent */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Relative to element */
+    border-radius: 50%;
+  }
+  .avatar img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 175, 175);
+  }
+  .avatar:active {
+    transform: translate(-50%, -330px);
+  }
+  .click-me {
+    position: absolute;
+    top: 80%; /* Relative to parent */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Relative to element */
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgb(0, 255, 255);
+  }
+}
+@media (min-width: 892px) {
+  .md-2021-item1 {
+    display: inline-block;
+  }
+}

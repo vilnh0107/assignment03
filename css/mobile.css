@@ -1,0 +1,26 @@
+@media (max-width: 576px) {
+  section > .container {
+    padding: 30px 5px;
+  }
+  /* NAV BAR */
+  #nav-bar a:link,
+  #nav-bar a:visited {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgb(73, 73, 73);
+  }
+  /* PERSONSL INFO */
+  #about .section-title {
+    font-size: 1.3rem;
+  }
+  #about ul {
+    padding-left: 0;
+  }
+  /* JOB INFO */
+  /* Customize JOB-INFO in Mobile Device */
+  .job-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
